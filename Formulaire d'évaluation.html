@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amélioration de l'Enseignement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Section pour l'évaluation -->
+        <section id="evaluation" class="evaluation">
+            <center><h2>Évaluation des enseignements en ABD</h2></center>
+            <form id="quiz-form">
+                <ol>
+                    <!-- Liste des questions à choix multiples -->
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .question-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .option-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .option-row label {
+            margin-right: 10px;
+            width: 150px;
+        }
+        .option-group {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="question-container">
+       <h2><p class="question-title">Les objectifs du cours et les points importants sont-ils précisés?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+       <h2> <p class="question-title">Le contenu du cours est-il conforme aux objectifs énoncés ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">Le plan du cours est-il respecté ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">L'enseignant fait-il le lien entre théorie et application ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">Les références bibliographiques sont-elles adoptées et intégrées au cours ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">Percevez-vous l'utilité du cours pour l'ensemble de la formation ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">L'enseignant utilise-t-il des supports pour dispenser son cours ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">L'enseignant est-il poctuel ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">L'enseignant répond-il  aux questions clairement ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">Les modalités d'évaluation sont-elles clairement précisées(durée de l'épreuve, barème, documents autorisés) ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <label for="mysql">MySQL</label>
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="business_plan">Business Plan</label>
+                <div class="option-group">
+                    <input type="radio" id="business_plan1" name="business_plan" value="tout_a_fait"><label for="business_plan1">Tout à fait</label>
+                    <input type="radio" id="business_plan2" name="business_plan" value="plutot_oui"><label for="business_plan2">Plutôt oui</label>
+                    <input type="radio" id="business_plan3" name="business_plan" value="pas_vraiment"><label for="business_plan3">Pas vraiment</label>
+                    <input type="radio" id="business_plan4" name="business_plan" value="pas_du_tout"><label for="business_plan4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="python">Python</label>
+                <div class="option-group">
+                    <input type="radio" id="python1" name="python" value="tout_a_fait"><label for="python1">Tout à fait</label>
+                    <input type="radio" id="python2" name="python" value="plutot_oui"><label for="python2">Plutôt oui</label>
+                    <input type="radio" id="python3" name="python" value="pas_vraiment"><label for="python3">Pas vraiment</label>
+                    <input type="radio" id="python4" name="python" value="pas_du_tout"><label for="python4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="mongodb">MongoDB</label>
+                <div class="option-group">
+                    <input type="radio" id="mongodb1" name="mongodb" value="tout_a_fait"><label for="mongodb1">Tout à fait</label>
+                    <input type="radio" id="mongodb2" name="mongodb" value="plutot_oui"><label for="mongodb2">Plutôt oui</label>
+                    <input type="radio" id="mongodb3" name="mongodb" value="pas_vraiment"><label for="mongodb3">Pas vraiment</label>
+                    <input type="radio" id="mongodb4" name="mongodb" value="pas_du_tout"><label for="mongodb4">Pas du tout</label>
+                </div>
+            </div>
+            <div class="option-row">
+                <label for="oracle">Oracle Avancé</label>
+                <div class="option-group">
+                    <input type="radio" id="oracle1" name="oracle" value="tout_a_fait"><label for="oracle1">Tout à fait</label>
+                    <input type="radio" id="oracle2" name="oracle" value="plutot_oui"><label for="oracle2">Plutôt oui</label>
+                    <input type="radio" id="oracle3" name="oracle" value="pas_vraiment"><label for="oracle3">Pas vraiment</label>
+                    <input type="radio" id="oracle4" name="oracle" value="pas_du_tout"><label for="oracle4">Pas du tout</label>
+                </div>
+            </div>
+        </div>
+        <h2> <p class="question-title">Le cadre du travail est-il agréable et propre à l'apprentisage ?</p></h2>
+        <div class="options-container">
+            <div class="option-row">
+                <div class="option-group">
+                    <input type="radio" id="mysql1" name="mysql" value="tout_a_fait"><label for="mysql1">Tout à fait</label>
+                    <input type="radio" id="mysql2" name="mysql" value="plutot_oui"><label for="mysql2">Plutôt oui</label>
+                    <input type="radio" id="mysql3" name="mysql" value="pas_vraiment"><label for="mysql3">Pas vraiment</label>
+                    <input type="radio" id="mysql4" name="mysql" value="pas_du_tout"><label for="mysql4">Pas du tout</label>
+                </div>
+    </li>
+    <!-- Ajouter d'autres questions et matières -->
+</ol>
+
+                        <!-- Autres options de réponse -->
+                    </li>
+                    <!-- Ajouter d'autres questions -->
+                </ol>
+                <input type="submit" value="Soumettre">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <style>
+        
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color-light: #ffffff;
+    --background-color-dark: #2c3e50;
+    --text-color-light: #2c3e50;
+    --text-color-dark: #ecf0f1;
+}
+
+body.light-theme {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange {
+    0% { color: var(--primary-color); }
+    50% { color: var(--secondary-color); }
+    100% { color: var(--primary-color); }
+}
+
+button {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color-light: #ffffff;
+    --background-color-dark: #2c3e50;
+    --text-color-light: #2c3e50;
+    --text-color-dark: #ecf0f1;
+    --header-bg: rgba(52, 152, 219, 0.8);
+    --button-hover-bg: #2980b9;
+}
+
+body.light-theme {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header {
+    background: var(--header-bg);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#toggleTheme {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggleTheme:hover {
+    background: var(--button-hover-bg);
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.welcome, .login-register, .dashboard, .evaluation, .academic-performance, .professional-development, .feedback, .reports, .settings {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h1, .login-register h2 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button, input[type="submit"] {
+    background: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: var(--button-hover-bg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: colorchange 3s infinite;
+}
+
+@keyframes colorchange {
+    0% { color: var(--primary-color); }
+    50% { color: var(--secondary-color); }
+    100% { color: var(--primary-color); }
+}
+    </style>
+</body>
+</html>
