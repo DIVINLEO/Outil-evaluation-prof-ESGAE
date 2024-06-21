@@ -1,0 +1,31 @@
+/esgae_evaluation_tool
+|-- /assets
+|   |-- /css
+|   |-- /js
+|   |-- /images
+|-- /includes
+|   |-- /header.php
+|   |-- /footer.php
+|   |-- /database.php (fichier de connexion à la base de données)
+|-- /student
+|   |-- dashboard.php
+|   |-- evaluation_form.php
+|   |-- evaluation_history.php
+|   |-- participation_activities.php
+|-- /teacher
+|   |-- dashboard.php
+|   |-- manage_grades.php
+|   |-- manage_attendance.php
+|   |-- professional_trainings.php
+|-- /admin
+|   |-- dashboard.php
+|   |-- manage_teachers.php
+|   |-- manage_classes.php
+|   |-- manage_students.php
+|   |-- evaluation_reports.php
+|   |-- manage_activities.php
+|-- /common
+|   |-- profile.php
+|   |-- logout.php
+|-- index.php
+|-- login.php
